@@ -65,12 +65,12 @@ export default function UploadForm() {
     router.push('/upload-success') // Replace with your desired route
   }
 
-  const handleSelectChange = (id: string, value: string) => {
-    setFormData(prevData => ({
-      ...prevData,
-      [id]: value
-    }))
-  }
+  // const handleSelectChange = (id: string, value: string) => {
+  //   setFormData(prevData => ({
+  //     ...prevData,
+  //     [id]: value
+  //   }))
+  // }
     // Handle input changes and update formData
     const handleChange = (e) => {
       const { name, value } = e.target;
@@ -81,10 +81,10 @@ export default function UploadForm() {
     };
 
       // Handle form submission
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formData);  // You can handle the form submission here
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log(formData);  // You can handle the form submission here
+  // };
 
   return (
     <div className="min-h-screen bg-black text-white overflow-y-auto scrollbar-hidden relative">
