@@ -9,7 +9,7 @@ export default function MaritimeMonitor() {
             <h2 className="text-white text-xl font-medium">Input</h2>
             <div className="relative aspect-video rounded-lg overflow-hidden border border-blue-800 shadow-inner">
               <Image
-                src="/input.jpg?height=270&width=480"
+                src="#?height=270&width=480"
                 alt="Input image"
                 layout="fill"
                 objectFit="cover"
@@ -20,7 +20,7 @@ export default function MaritimeMonitor() {
             <h2 className="text-white text-xl font-medium">Output</h2>
             <div className="relative aspect-video rounded-lg overflow-hidden border border-blue-800 shadow-inner">
               <Image
-                src="/output.jpg?height=270&width=480"
+                src="#?height=270&width=480"
                 alt="Output image"
                 layout="fill"
                 objectFit="cover"
