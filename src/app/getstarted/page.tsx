@@ -94,7 +94,7 @@ export default function UploadForm() {
         <ShootingStars />
       </div>
       <NavBar />
-      <Card className="max-w-6xl mx-auto m-[100px] relative z-10 !bg-gray-900 opacity-70 backdrop-blur-lg">
+      <Card className="max-w-6xl mx-auto m-[100px] relative z-10 !bg-gray opacity-70 backdrop-blur-sm">
         <CardHeader>
           <h1 className="text-2xl font-semibold mb-6">Upload Files</h1>
         </CardHeader>

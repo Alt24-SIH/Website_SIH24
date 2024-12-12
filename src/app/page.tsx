@@ -13,17 +13,17 @@ import { Card, CardHeader, CardContent } from "@/components/ui/card";
 interface MusicCardProps {
   imagePath: string;
   title: string;
-  trackCount: string;
+  // trackCount: string;
 }
 
 const MusicCard: React.FC<MusicCardProps> = ({
   imagePath,
   title,
-  trackCount,
+  // trackCount,
 }) => (
-  <Card className="w-64 bg-[#Ffc0cb]">
+  <Card className="w-64 bg-[#173EAD]">
     <CardHeader className="pb-2 pt-2  px-4 rounded-tl-lg rounded-tr-lg flex-col items-start bg-[#000000]">
-      <small className="text-muted-foreground">{trackCount}</small>
+      {/* <small className="text-muted-foreground">{trackCount}</small> */}
       <h4 className="font-bold text-lg">{title}</h4>
     </CardHeader>
     <CardContent className="overflow-visible py-2">
@@ -42,22 +42,22 @@ const cardData = [
   {
     imagePath: "/Icon/data-calibration.png",
     title: "Data Calibration",
-    trackCount: "Py6S",
+    // trackCount: "Py6S",
   },
   {
     imagePath: "/images/backend-beats.jpg",
     title: "Backend Beats",
-    trackCount: "KYU HAI YEIDHAR",
+    // trackCount: "KYU HAI YEIDHAR",
   },
   {
     imagePath: "/Icon/Anomaly_detection.png",
     title: "Anomaly Detection",
-    trackCount: "Using Modified GAN",
+    // trackCount: "Using Modified GAN",
   },
   {
     imagePath: "/Icon/Target_detection.png",
     title: "Target Detection",
-    trackCount: "    ",
+    // trackCount: "    ",
   },
 ];
 
