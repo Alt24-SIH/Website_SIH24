@@ -47,7 +47,7 @@ const cardData = [
   {
     imagePath: "/images/backend-beats.jpg",
     title: "Backend Beats",
-    trackCount: 15,
+    trackCount: "KYU HAI YEIDHAR",
   },
   {
     imagePath: "/Icon/Anomaly_detection.png",
