@@ -33,23 +33,23 @@ export default function MaritimeMonitor() {
           <dl className="space-y-3">
             <div className="grid grid-cols-2 gap-4">
               <dt className="text-zinc-400 font-medium">Target</dt>
-              <dd className="text-white">Ship</dd>
+              <dd className="text-white"></dd>
             </div>
             <div className="grid grid-cols-2 gap-4">
               <dt className="text-zinc-400 font-medium">Aerosol</dt>
-              <dd className="text-white">Maritime</dd>
+              <dd className="text-white"></dd>
             </div>
             <div className="grid grid-cols-2 gap-4">
               <dt className="text-zinc-400 font-medium">Humidity</dt>
-              <dd className="text-white">Midlatitude Summer</dd>
+              <dd className="text-white"></dd>
             </div>
             <div className="grid grid-cols-2 gap-4">
               <dt className="text-zinc-400 font-medium">Temperature</dt>
-              <dd className="text-white">26° C</dd>
+              <dd className="text-white"></dd>
             </div>
             <div className="grid grid-cols-2 gap-4">
               <dt className="text-zinc-400 font-medium">Model</dt>
-              <dd className="text-white">Alt24 Vert1.o+</dd>
+              <dd className="text-white"></dd>
             </div>
           </dl>
         </div>
