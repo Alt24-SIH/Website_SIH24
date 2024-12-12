@@ -46,7 +46,7 @@ const cardData = [
   },
   {
     imagePath: "/images/backend-beats.jpg",
-    title: "Backend Beats",
+    title: "De-Noising",
     // trackCount: "KYU HAI YEIDHAR",
   },
   {
@@ -98,7 +98,7 @@ export default function Home() {
         </div>
 
         {/* Vertical Stack for TechIcons and Landing_1 */}
-        <div className="flex flex-col w-full mt-10">
+        <div className="flex flex-col w-full mt-[100px]">
           {/* TechIcons Section */}
           <div>
             <TechIcons />
