@@ -1,5 +1,7 @@
 import Image from 'next/image';
 
+
+
 export default function HyperspectralBanner() {
   return (
     <div className="bg-black text-white flex flex-col lg:flex-row items-center justify-between px-8 py-12">

@@ -2,13 +2,51 @@ import NavBar from "@/components/nav-bar";
 // import ShootingStars from "@/components/shooting-stars";
 import TechIcons from "@/components/techno_icons";
 import Landing_1 from "@/components/Landing_1";
+import UseCases from "@/components/use_cases";
+import Image from "next/image";
 // import UseCases from "@/components/use_cases";
 // import GlobeNew from "@/components/GlobeNew";
 // import Spline from '@splinetool/react-spline/next';
+import { Card, CardHeader, CardContent } from "@/components/ui/card"
+
+interface MusicCardProps {
+  imagePath: string;
+  title: string;
+  trackCount: number;
+}
+
+const MusicCard: React.FC<MusicCardProps> = ({ imagePath, title, trackCount }) => (
+  <Card className="w-64 bg-[#Ffc0cb]">
+    <CardHeader className="pb-2 pt-2  px-4 rounded-tl-lg rounded-tr-lg flex-col items-start bg-[#ffffff]">
+      <small className="text-muted-foreground">{trackCount}</small>
+      <h4 className="font-bold text-lg">{title}</h4>
+    </CardHeader>
+    <CardContent className="overflow-visible py-2">
+      <Image
+        alt={`${title} cover`}
+        className="object-cover rounded-xl"
+        src={imagePath}
+        width={240}
+        height={120}
+      />
+    </CardContent>
+  </Card>
+)
+
+
+
+  const cardData = [
+    { imagePath: "/Icon/data-calibration.png", title: "Data Calibration", trackCount: "Py6S" },
+    { imagePath: "/images/backend-beats.jpg", title: "Backend Beats", trackCount: 15 },
+    { imagePath: "/Icon/Anomaly_detection.png", title: "Anomaly Detection", trackCount: "Using Modified GAN" },
+    { imagePath: "/Icon/Target_detection.png", title: "Target Detection", trackCount: "    " },
+  ];
+
+
 
 export default function Home() {
   return (
-<div className="relative min-h-screen bg-black text-white overflow-y-auto scrollbar-hidden">
+    <div className="relative min-h-screen bg-black text-white overflow-y-auto scrollbar-hidden">
   {/* ShootingStars component in the complete background */}
   {/* <ShootingStars /> */}
   
@@ -49,6 +87,16 @@ export default function Home() {
       <div className="h-96">
         <Landing_1 />
       </div>
+
+      <div className="bg-black pt-[100px] pb-[100px] flex flex-wrap justify-around  pl-[40px] pr-[40px]">
+      {cardData.map((card, index) => (
+        <MusicCard key={index} {...card} />
+      ))}
+      </div>
+      <div>
+
+
+    </div>
     </div>
 
   </main>
