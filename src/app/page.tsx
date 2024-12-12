@@ -4,6 +4,7 @@ import TechIcons from "@/components/techno_icons";
 import Landing_1 from "@/components/Landing_1";
 import UseCases from "@/components/use_cases";
 import Image from "next/image";
+import Footer from "@/components/footer";
 // import UseCases from "@/components/use_cases";
 // import GlobeNew from "@/components/GlobeNew";
 // import Spline from '@splinetool/react-spline/next';
@@ -17,7 +18,7 @@ interface MusicCardProps {
 
 const MusicCard: React.FC<MusicCardProps> = ({ imagePath, title, trackCount }) => (
   <Card className="w-64 bg-[#Ffc0cb]">
-    <CardHeader className="pb-2 pt-2  px-4 rounded-tl-lg rounded-tr-lg flex-col items-start bg-[#ffffff]">
+    <CardHeader className="pb-2 pt-2  px-4 rounded-tl-lg rounded-tr-lg flex-col items-start bg-[#000000]">
       <small className="text-muted-foreground">{trackCount}</small>
       <h4 className="font-bold text-lg">{title}</h4>
     </CardHeader>
@@ -54,7 +55,7 @@ export default function Home() {
 
   <NavBar />
 
-  <main className="container mx-auto pt-32 pb-20 relative flex flex-col items-center text-center z-20">
+  <main className="container mx-auto pt-32 relative flex flex-col items-center text-center z-20">
     {/* Text Section */}
     <div className="md:flex-1 pb-[75px] pt-[50px]">
       <div className="inline-block rounded-full bg-white/10 px-4 py-1.5 text-1xl font-medium text-gray-300 backdrop-blur-sm mb-4">
@@ -65,7 +66,7 @@ export default function Home() {
         <div>HyperSpectral Imaging Tool</div>
         <div className="text-gray-300 md:text-4xl">We provide a state of the art software</div>
         <div className="text-gray-400 md:text-4xl">for Target Detection by optimizing</div>
-        <div className="text-gray-500 md:text-5xl">Anomaly Detection</div>
+        <div className="text-gray-c500 md:text-5xl">Anomaly Detection</div>
       </h1>
 
       <a
@@ -94,9 +95,11 @@ export default function Home() {
       ))}
       </div>
       <div>
-
-
-    </div>
+        <UseCases />
+      </div>
+      <div>
+        <Footer />
+      </div>
     </div>
 
   </main>
