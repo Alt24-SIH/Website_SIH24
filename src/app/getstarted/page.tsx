@@ -88,13 +88,13 @@ export default function UploadForm() {
   // };
 
   return (
-    <div className="min-h-screen bg-black text-white overflow-y-auto scrollbar-hidden relative">
+    <div className="min-h-screen bg-black text-white overflow-y-auto scrollbar-hidden relative ">
       {/* Absolute Background with ShootingStars */}
       <div className="z-[-1]">
         <ShootingStars />
       </div>
       <NavBar />
-      <Card className="!{bg-gray-900/500} max-w-6xl mx-auto m-[100px] relative z-10 backdrop-blur-sm">
+      <Card className="max-w-6xl mx-auto m-[100px] relative z-10 !bg-gray-900 opacity-70 backdrop-blur-lg">
         <CardHeader>
           <h1 className="text-2xl font-semibold mb-6">Upload Files</h1>
         </CardHeader>

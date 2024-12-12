@@ -1,5 +1,5 @@
 import NavBar from "@/components/nav-bar";
-// import ShootingStars from "@/components/shooting-stars";
+import ShootingStars from "@/components/shooting-stars";
 import TechIcons from "@/components/techno_icons";
 import Landing_1 from "@/components/Landing_1";
 import UseCases from "@/components/use_cases";
@@ -65,7 +65,7 @@ export default function Home() {
   return (
     <div className="relative min-h-screen bg-black text-white overflow-y-auto scrollbar-hidden">
       {/* ShootingStars component in the complete background */}
-      {/* <ShootingStars /> */}
+      <ShootingStars />
 
       <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(68,68,68,.2)_50%,transparent_75%,transparent_100%)] bg-[length:4px_4px] z-10" />
 
