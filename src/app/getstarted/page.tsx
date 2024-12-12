@@ -63,7 +63,7 @@ export default function UploadForm() {
   };
 
   const handleGoClick = () => {
-    router.push("/upload-success"); // Replace with your desired route
+    router.push("/Result"); // Replace with your desired route
   };
 
   // const handleSelectChange = (id: string, value: string) => {
