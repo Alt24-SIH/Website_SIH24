@@ -1,12 +1,12 @@
-import Link from "next/link"
-import Image from "next/image"
+import Link from "next/link";
+import Image from "next/image";
 
 export default function NavBar() {
   return (
     <nav className="fixed top-0 w-full z-50 bg-black/50 backdrop-blur-sm">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="flex items-center space-x-2">
             <Image
               src="/SIH.jpg"
               alt="Logo"
@@ -14,15 +14,16 @@ export default function NavBar() {
               height={50}
               className="rounded-full"
             />
+            <span className="text-white text-lg font-bold">Alt_24</span>
           </Link>
 
           <div className="hidden md:flex space-x-12">
             {[
               ["Get Started", "/getstarted"],
               ["HyperAI", "/hyperai"],
-              ["Software", "/timeline"],
-              ["Applications", "/sponsors"],
-              ["Support", "/team"],
+              //["Software", "/timeline"],
+              //["Applications", "/sponsors"],
+              //["Support", "/team"],
               ["Home", "/"],
             ].map(([title, url]) => (
               <Link
@@ -37,6 +38,5 @@ export default function NavBar() {
         </div>
       </div>
     </nav>
-  )
+  );
 }
-

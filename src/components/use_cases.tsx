@@ -2,10 +2,14 @@ import Image from 'next/image';
 
 export default function UseCases() {
   return (
-    <div className="bg-black text-white px-8 py-12">
+    <div className=" text-white px-8 py-12">
       {/* Use Cases Section */}
-      <h2 className="text-5xl font-bold mb-8">Use Cases</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 justify-items-center">
+      <h2 className="text-5xl font-bold mb-8 mt-[0px] mb-[50px] bg-gradient-to-r from-purple-200 via-pink-200 to-red-200 text-white bg-clip-text p-4 rounded-lg">
+        Use Cases
+      </h2>
+
+
+      <div className="grid grid-cols-1 md:grid-cols-3 justify-items-center mb-[30px]">
         {[
           {
             title: "Defence",
@@ -38,7 +42,7 @@ export default function UseCases() {
               className="w-full object-cover"
             />
             <div className="p-4">
-              <h3 className="text-lg font-bold mb-2">{item.title}</h3>
+              <h3 className="text-2xl md:text-3xl font-bold mb-4">{item.title}</h3> {/* Updated font size */}
               <p className="text-sm">{item.description}</p>
             </div>
           </div>

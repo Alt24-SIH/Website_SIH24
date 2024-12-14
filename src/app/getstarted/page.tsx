@@ -1,7 +1,7 @@
 "use client";
 import NavBar from "@/components/nav-bar";
 import ShootingStars from "@/components/shooting-stars";
-
+import Footer from "@/components/footer";
 import { Upload } from "lucide-react";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
@@ -94,12 +94,12 @@ export default function UploadForm() {
         <ShootingStars />
       </div>
       <NavBar />
-      <Card className="max-w-6xl mx-auto m-[100px] relative z-10 !bg-gray opacity-70 backdrop-blur-sm">
+      <Card className="max-w-6xl mx-auto m-[100px] relative z-10 !bg-gray opacity-70 backdrop-blur-sm rounded-lg shadow-lg glow mt-[100px]">
         <CardHeader>
           <h1 className="text-2xl font-semibold mb-6">Upload Files</h1>
         </CardHeader>
         <CardContent>
-          <div className="flex flex-col md:flex-row gap-6">
+          <div className="flex flex-col md:flex-row gap-6 ">
             {/* File Upload Area */}
             <div className="md:w-1/2">
               <div
@@ -144,7 +144,7 @@ export default function UploadForm() {
             {/* Form Fields */}
             <div className="md:w-1/2 space-y-4">
               {/* Target Input */}
-              <div className="mb-4">
+              {/* <div className="mb-4">
                 <label
                   htmlFor="target"
                   className="block text-sm font-medium pb-[5px]"
@@ -160,82 +160,83 @@ export default function UploadForm() {
                   placeholder="Enter target value"
                   className="w-full p-2 border border-gray-300 rounded text-black"
                 />
-              </div>
+              </div> */}
               {/* Aerosol Input */}
               <div className="mb-4">
-                <label
-                  htmlFor="aerosol"
-                  className="block text-sm font-medium pb-[5px]"
-                >
-                  Aerosol
-                </label>
-                <input
-                  type="text"
-                  id="aerosol"
-                  name="aerosol"
-                  value={formData.aerosol}
-                  onChange={handleChange}
-                  placeholder="Enter aerosol value"
-                  className="w-full p-2 border border-gray-300 rounded text-black"
-                />
-              </div>
+  <label
+    htmlFor="aerosol"
+    className="block text-sm font-medium pb-[5px]"
+  >
+    Aerosol
+  </label>
+  <input
+    type="text"
+    id="aerosol"
+    name="aerosol"
+    value={formData.aerosol}
+    onChange={handleChange}
+    placeholder="Enter Aerosol Value"
+    className="w-full p-2 border border-gray-300 rounded text-black placeholder-gray"
+  />
+</div>
 
-              {/* Humidity Input */}
-              <div className="mb-4">
-                <label
-                  htmlFor="humidity"
-                  className="block text-sm font-medium pb-[5px]"
-                >
-                  Humidity
-                </label>
-                <input
-                  type="text"
-                  id="humidity"
-                  name="humidity"
-                  value={formData.humidity}
-                  onChange={handleChange}
-                  placeholder="Enter humidity value"
-                  className="w-full p-2 border border-gray-300 rounded text-black"
-                />
-              </div>
+{/* Humidity Input */}
+<div className="mb-4">
+  <label
+    htmlFor="humidity"
+    className="block text-sm font-medium pb-[5px] font-white"
+  >
+    Humidity
+  </label>
+  <input
+    type="text"
+    id="humidity"
+    name="humidity"
+    value={formData.humidity}
+    onChange={handleChange}
+    placeholder="Enter Humidity Value"
+    className="w-full p-2 border border-gray-300 rounded text-black placeholder-gray"
+  />
+</div>
 
-              {/* Temperature Input */}
-              <div className="mb-4">
-                <label
-                  htmlFor="temperature"
-                  className="block text-sm font-medium pb-[5px]"
-                >
-                  Temperature
-                </label>
-                <input
-                  type="text"
-                  id="temperature"
-                  name="temperature"
-                  value={formData.temperature}
-                  onChange={handleChange}
-                  placeholder="Enter temperature value"
-                  className="w-full p-2 border border-gray-300 rounded text-black"
-                />
-              </div>
+{/* Temperature Input */}
+<div className="mb-4">
+  <label
+    htmlFor="temperature"
+    className="block text-sm font-medium pb-[5px]"
+  >
+    Temperature
+  </label>
+  <input
+    type="text"
+    id="temperature"
+    name="temperature"
+    value={formData.temperature}
+    onChange={handleChange}
+    placeholder="Enter Temperature Value"
+    className="w-full p-2 border border-gray-300 rounded text-black placeholder-gray"
+  />
+</div>
 
-              {/* Anomaly Detection Model Input */}
-              <div className="mb-4">
-                <label
-                  htmlFor="anomalyDetectionModel"
-                  className="block text-sm font-medium pb-[5px]"
-                >
-                  Anomaly Detection Model
-                </label>
-                <input
-                  type="text"
-                  id="anomalyDetectionModel"
-                  name="anomalyDetectionModel"
-                  value={formData.anomalyDetectionModel}
-                  onChange={handleChange}
-                  placeholder="Enter anomaly detection model"
-                  className="w-full p-2 border border-gray-300 rounded text-black"
-                />
-              </div>
+{/* Anomaly Detection Model Input */}
+<div className="mb-4">
+  <label
+    htmlFor="anomalyDetectionModel"
+    className="block text-sm font-medium pb-[5px]"
+  >
+    Anomaly Detection Model
+  </label>
+  <input
+    type="text"
+    id="anomalyDetectionModel"
+    name="anomalyDetectionModel"
+    value={formData.anomalyDetectionModel}
+    onChange={handleChange}
+    placeholder="Enter Anomaly Detection Model"
+    className="w-full p-2 border border-gray-300 rounded text-black placeholder-gray"
+  />
+</div>
+
 
               <div className="flex justify-end space-x-4 mt-6">
                 <button className="px-4 py-2 bg-gray-800 hover:bg-gray-700 rounded-md">
@@ -264,6 +265,9 @@ export default function UploadForm() {
           </div>
         </CardContent>
       </Card>
+      <div className="w-full">
+                  <Footer />
+                </div>
     </div>
   );
 }
